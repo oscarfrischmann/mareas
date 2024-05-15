@@ -50,6 +50,8 @@ h2 {
   grid-column: 1/2;
   text-align: end;
   margin-right: -10px;
+  color: whitesmoke;
+
 }
 
 .columna2.uno {
@@ -124,6 +126,7 @@ button {
   align-items: start;
   width: 90%;
   margin: 0 auto;
+  color: whitesmoke;
 
 }
 
