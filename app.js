@@ -1,5 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
-
 const formData = document.getElementById('formData');
 formData.addEventListener('submit', calculate);
 const datosCalculados = document.getElementById('datosCalculados');
