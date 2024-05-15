@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Regla de Duodécimos | Altura de Mareas</title>
+</head>
+
+<body>
+  <div class="main">
+    <h1>Regla de DUODÉCIMOS</h1>
+    <h2>altura de mareas</h2>
+    <form class="form" id="formData">
+
+      <label for="calado" class="columna1">Calado</label>
+      <input type="number" name="caladoMts" id="caladoMts" class="input" placeholder="mts">
+      <input type="number" name="caladoCms" id="caladoCms" class="input" placeholder="cms">
+
+      <label for="margenSeguridad" class="columna1">Margen de seguridad</label>
+      <input type="number" name="margenSeguridad" id="margenSeguridad" class="input" placeholder="cms">
+
+      <label for="profundidad" class="columna1">Profundidad</label>
+      <input type="number" name="profundidad" id="profundidad" class="input" placeholder="cms" required>
+
+      <label for="mareaMeteo" class="columna1">Marea meteorológica</label>
+      <input type="number" name="mareaMeteo" id="mareaMeteo" class="input" placeholder="cms" required>
+
+
+      <label for="mareaUno" class="columna1">Inicio <br>de Marea</label>
+      <input type="time" name="mareaUno" id="mareaUno" class="input" required>
+
+      <label for="mareaDos" class="columna1">Final <br>de Marea</label>
+      <input type="time" name="mareaDos" id="mareaDos" class="input" required>
+
+      <input type="number" name="alturaUnoMts" id="alturaUnoMts" class="input alturaUnoMts" placeholder="mts" required>
+      <input type="number" name="alturaUnoCms" id="alturaUnoCms" class="input alturaUnoCms" placeholder="cms" required>
+      <!-- <span>cms</span> -->
+
+      <input type="number" name="alturaDosMts" id="alturaDosMts" class="input alturaDosMts" placeholder="mts" required>
+      <input type="number" name="alturaDosCms" id="alturaDosCms" class="input alturaDosCms" placeholder="cms" required>
+      <!-- <span>cms</span> -->
+
+
+
+      <button type="submit" onclick="animar()">Calcular</button>
+
+    </form>
+    <div id="datosCalculados" class="animate__animated animate__slow">
+      <div class="results" id=" results"></div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: whitesmoke;
+}
+
+.main {
+  width: 370px;
+  height: 760px;
+  /* background-color: aqua; */
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px, -2px -2px 15px inset;
+  background: #373B44;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #4286f4, #373B44);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.form {
+  display: grid;
+  /* width: 50%; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+
+.columna1 {
+  grid-column: 1/2;
+  text-align: end;
+  margin-right: -10px;
+}
+
+.columna2.uno {
+  place-self: end;
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+.columna2.dos {
+  place-self: end;
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+
+
+
+.input {
+  width: 73px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 3px;
+  border: none;
+  box-shadow: 2px 2px 5px;
+  justify-self: end;
+
+
+  &.alturaUnoMts {
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+
+  &.alturaUnoCms {
+    grid-column: 4/5;
+    grid-row: 5/6;
+  }
+
+  &:nth-child(3) {
+    justify-self: left;
+  }
+
+  &:nth-child(15) {
+    justify-self: left;
+  }
+
+  &:nth-child(17) {
+    justify-self: left;
+  }
+
+
+
+}
+
+label {
+  align-content: center;
+}
+
+button {
+  margin: 10px;
+  grid-column: -4/span 2;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: blue;
+  color: white;
+  box-shadow: 2px 2px 5px black;
+}
+
+.datosCalculados {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+table {
+  border: solid 1px;
+  margin: 20px auto;
+  font-size: 1.3rem;
+
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  width: 80px;
+}
+
+.results {
+  align-self: center;
+}
