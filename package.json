@@ -1,0 +1,14 @@
+{
+  "name": "mareas",
+  "version": "1.0.2",
+  "description": "regla de mareas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oscar Frischmann",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.2.2"
+  }
+}

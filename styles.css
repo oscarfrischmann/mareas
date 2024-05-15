@@ -18,8 +18,9 @@ h1 {
 
 h2 {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   color: whitesmoke;
+  font-size: 1rem;
 }
 
 .main {
@@ -50,6 +51,7 @@ h2 {
   grid-column: 1/2;
   text-align: end;
   margin-right: -10px;
+  margin-bottom: 5px;
   color: whitesmoke;
 
 }
