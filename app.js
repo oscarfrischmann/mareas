@@ -130,7 +130,7 @@ function calculate(e) {
   <div class="datosCalculados">
     <span>Sondaje requerido: ${sondajeRequerido} mts</span>
     <span>Profundidad: ${data.profundidad} cms</span>
-    <span>Diferencia de marea/6: ${diferenciaMarea}</span>
+    <span>Diferencia de marea/6: ${diferenciaMarea} min</span>
     <span>Amplitud de marea/12 = ${amplitudMareas} cms</span>
   </div>
 
