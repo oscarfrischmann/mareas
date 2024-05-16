@@ -40,7 +40,11 @@ function calculate(e) {
 		alturaDosMts: alturaDosMts,
 		alturaDosCms: alturaDosCms,
 	};
-	const sondajeRequerido = data.caladoMts + data.caladoCms / 100 + data.margen / 100;
+	const SR = data.caladoMts + data.caladoCms / 100 + data.margen / 100;
+	console.log(SR);
+	const sondajeRequerido = SR.toFixed(2);
+	console.log(sondajeRequerido);
+
 	const diferenciaMareaDecimal =
 		(data.mareaDosMinutos - data.mareaUnoMinutos + (data.mareaDosHora - data.mareaUnoHora) * 60) / 60;
 	const diferenciaMareaMin = Number(((diferenciaMareaDecimal - Math.floor(diferenciaMareaDecimal)) * 60).toFixed(0));
@@ -128,9 +132,9 @@ function calculate(e) {
 
 	datosCalculados.innerHTML = `
   <div class="datosCalculados">
-    <span>Sondaje requerido: ${sondajeRequerido} mts</span>
-    <span>Profundidad: ${data.profundidad} cms</span>
-    <span>Diferencia de marea/6: ${diferenciaMarea} min</span>
+    <span>Sondaje requerido = ${sondajeRequerido} mts</span>
+    <span>Profundidad = ${data.profundidad} cms</span>
+    <span>Diferencia de marea/6 = ${diferenciaMarea} min</span>
     <span>Amplitud de marea/12 = ${amplitudMareas} cms</span>
   </div>
 
