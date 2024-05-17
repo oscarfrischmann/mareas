@@ -111,16 +111,33 @@ label {
   align-content: center;
 }
 
-button {
+.btn1 {
   margin: 10px;
-  grid-column: -4/span 2;
-  height: 40px;
+  grid-column: -5/span 2;
+  width: 80px;
+  height: 30px;
   border-radius: 15px;
   border: none;
   background-color: blue;
   color: white;
   box-shadow: 2px 2px 5px black;
+  place-self: end;
+
 }
+
+.btn2 {
+  margin: 10px;
+  grid-column: -3/span 2;
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: grey;
+  color: white;
+  box-shadow: 2px 2px 5px black;
+  place-self: start;
+}
+
 
 .datosCalculados {
   display: flex;
@@ -133,18 +150,48 @@ button {
 }
 
 table {
-  border: solid 1px;
+  /* border: solid 1px; */
   margin: 20px auto;
   font-size: 1.3rem;
   width: 350px;
+  border-radius: 10px;
+  border-style: outset;
 
 
 }
 
 th,
 td {
-  border: 1px solid rgb(160 160 160);
+  /* border: 1px solid rgb(160 160 160); */
+  background-color: rgb(160 160 160);
   width: 85px;
+  text-align: center;
+
+
+}
+
+th {
+  &:nth-child(1) {
+    border-radius: 6px 0 0 0;
+  }
+}
+
+th {
+  &:nth-child(3) {
+    border-radius: 0 6px 0 0;
+  }
+}
+
+.td1 {
+
+  border-radius: 0 0 0 6px;
+
+}
+
+.td2 {
+
+  border-radius: 0 0 6px 0;
+
 }
 
 .results {

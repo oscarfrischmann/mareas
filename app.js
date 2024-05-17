@@ -3,12 +3,19 @@ formData.addEventListener('submit', calculate);
 const datosCalculados = document.getElementById('datosCalculados');
 const boton = document.getElementsByTagName('button');
 
-function animar() {
-	boton[0].style.backgroundColor = 'green';
-	setTimeout(() => {
-		boton[0].style.backgroundColor = 'blue';
-	}, 1000);
-	datosCalculados.classList.toggle('animate__fadeIn');
+function animar(color) {
+	if (color == 'green') {
+		boton[0].style.backgroundColor = color;
+		setTimeout(() => {
+			boton[0].style.backgroundColor = 'blue';
+		}, 1000);
+		datosCalculados.classList.toggle('animate__fadeIn');
+	} else {
+		boton[1].style.backgroundColor = color;
+		setTimeout(() => {
+			boton[1].style.backgroundColor = 'grey';
+		}, 1000);
+	}
 }
 
 function calculate(e) {
@@ -173,9 +180,9 @@ function calculate(e) {
         <td>${ampMar[4] / 100} mts</td>
       </tr>
       <tr>
-        <td>6</td>
+        <td class="td1">6</td>
         <td>${horasString[5]}</td>
-        <td>${ampMar[5] / 100} mts</td>
+        <td class="td2">${ampMar[5] / 100} mts</td>
       </tr>
     </table>
 
